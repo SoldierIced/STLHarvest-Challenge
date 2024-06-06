@@ -1,0 +1,19 @@
+version: "3"
+services:
+  wallet1:
+    build: .
+    environment:
+      - PRIVATE_KEY=
+      - PORT=3000
+    ports:
+      - "3000:3000"
+
+  wallet2:
+    build: .
+    environment:
+      - PRIVATE_KEY=
+      - PORT=3001
+    ports:
+      - "3001:3001"
+
+  # Agrega más wallets si es necesario
